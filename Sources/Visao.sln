@@ -1,0 +1,34 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visao.Core", "Visao.Core\Visao.Core.csproj", "{87300C5A-23BF-4C4E-BA46-5EAAF803BC67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visao.Controls", "Visao.Controls\Visao.Controls.csproj", "{DA285EEF-1DBA-4E47-8BF9-AB7600EEBD04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visao.iOS", "Visao.iOS\Visao.iOS.csproj", "{C4C0BCBE-ED2A-48E2-9B33-43BC8CF61A41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{3A9F7E82-6E57-4480-B558-C8D8728D819D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87300C5A-23BF-4C4E-BA46-5EAAF803BC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87300C5A-23BF-4C4E-BA46-5EAAF803BC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87300C5A-23BF-4C4E-BA46-5EAAF803BC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87300C5A-23BF-4C4E-BA46-5EAAF803BC67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA285EEF-1DBA-4E47-8BF9-AB7600EEBD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA285EEF-1DBA-4E47-8BF9-AB7600EEBD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA285EEF-1DBA-4E47-8BF9-AB7600EEBD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA285EEF-1DBA-4E47-8BF9-AB7600EEBD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4C0BCBE-ED2A-48E2-9B33-43BC8CF61A41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4C0BCBE-ED2A-48E2-9B33-43BC8CF61A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4C0BCBE-ED2A-48E2-9B33-43BC8CF61A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4C0BCBE-ED2A-48E2-9B33-43BC8CF61A41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C4C0BCBE-ED2A-48E2-9B33-43BC8CF61A41} = {3A9F7E82-6E57-4480-B558-C8D8728D819D}
+	EndGlobalSection
+EndGlobal
