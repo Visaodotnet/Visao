@@ -1,6 +1,7 @@
 ﻿namespace Visao.iOS
 {
 	using System;
+	using OpenTK.Graphics.ES30;
 
 	public class Context : IContext
 	{
@@ -10,7 +11,11 @@
 
 		public void Begin(IPolygon area)
 		{
-			throw new NotImplementedException();
+			GL.Clear(ClearBufferMask.ColorBufferBit);
+			GL.ClearColor(1f, 0.6f, 0.65f, 1);
+
+			GL.UseProgram(this.Program.ID);
+
 		}
 
 		public void Fill(IPolygon shape, IBrush brush)

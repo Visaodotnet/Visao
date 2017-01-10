@@ -42,6 +42,7 @@
     <Compile Include="Base\Size.cs" />
     <Compile Include="Shapes\Rectangle.cs" />
     <Compile Include="Shapes\RoundRectangle.cs" />
+    <Compile Include="Base\Matrix.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Brushes\" />
