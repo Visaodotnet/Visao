@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{15915667-9B5D-4D16-8CB0-3E58D19DEEA4}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Visao.Shared.OpenGL</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\Programs\Default.fs" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\Programs\Default.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Shaders\Shader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shaders\ShaderProgram.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Context.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Shaders\" />
+  </ItemGroup>
+</Project>

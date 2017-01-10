@@ -14,7 +14,7 @@
 			GL.Clear(ClearBufferMask.ColorBufferBit);
 			GL.ClearColor(1f, 0.6f, 0.65f, 1);
 
-			GL.UseProgram(this.Program.ID);
+		
 
 		}
 

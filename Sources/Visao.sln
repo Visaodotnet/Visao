@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visao.iOS", "Visao.iOS\Visa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{3A9F7E82-6E57-4480-B558-C8D8728D819D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visao.Droid", "Visao.Droid\Visao.Droid.csproj", "{961254B3-7012-47AA-8AED-96126FCB2802}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Visao.Shared.OpenGL", "Visao.Shared.OpenGL\Visao.Shared.OpenGL.shproj", "{15915667-9B5D-4D16-8CB0-3E58D19DEEA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,14 @@ Global
 		{C4C0BCBE-ED2A-48E2-9B33-43BC8CF61A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4C0BCBE-ED2A-48E2-9B33-43BC8CF61A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4C0BCBE-ED2A-48E2-9B33-43BC8CF61A41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961254B3-7012-47AA-8AED-96126FCB2802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961254B3-7012-47AA-8AED-96126FCB2802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961254B3-7012-47AA-8AED-96126FCB2802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961254B3-7012-47AA-8AED-96126FCB2802}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C4C0BCBE-ED2A-48E2-9B33-43BC8CF61A41} = {3A9F7E82-6E57-4480-B558-C8D8728D819D}
+		{961254B3-7012-47AA-8AED-96126FCB2802} = {3A9F7E82-6E57-4480-B558-C8D8728D819D}
+		{15915667-9B5D-4D16-8CB0-3E58D19DEEA4} = {3A9F7E82-6E57-4480-B558-C8D8728D819D}
 	EndGlobalSection
 EndGlobal

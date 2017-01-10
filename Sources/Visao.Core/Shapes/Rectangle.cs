@@ -27,7 +27,7 @@ namespace Visao
 		/// <param name="y">The y coordinate of the Rectangle.</param>
 		/// <param name="width">The width coordinate of the Rectangle.</param>
 		/// <param name="height">The height coordinate of the Rectangle.</param>
-		public Rectangle(int x, int y, int width, int height) : this(new Point(x, y), new Size(width, height))
+		public Rectangle(float x, float y, float width, float height) : this(new Point(x, y), new Size(width, height))
 		{ }
 
 		#endregion
@@ -107,6 +107,8 @@ namespace Visao
 		/// </summary>
 		public static readonly Rectangle Zero = new Rectangle();
 
+		#endregion
+
 		#region IPolygon
 
 		public virtual Point[] Points => new [] 
@@ -157,7 +159,7 @@ namespace Visao
 		/// are exclusive.</remarks>
 		public bool Contains(Rectangle rect)
 		{
-			return Contains(rect.Location) && Contains(rect.Location + rect.Size);
+			return Contains(rect.Location) && Contains(rect.Location + new Point(rect.Width, rect.Height));
 		}
 
 		#endregion
@@ -193,10 +195,10 @@ namespace Visao
 		/// <param name="b">The blue component.</param>
 		public static Rectangle Union(Rectangle a, Rectangle b)
 		{
-			int x1 = Math.Min(a.X, b.X);
-			int x2 = Math.Max(a.X + a.Width, b.X + b.Width);
-			int y1 = Math.Min(a.Y, b.Y);
-			int y2 = Math.Max(a.Y + a.Height, b.Y + b.Height);
+			var x1 = Math.Min(a.X, b.X);
+			var x2 = Math.Max(a.X + a.Width, b.X + b.Width);
+			var y1 = Math.Min(a.Y, b.Y);
+			var y2 = Math.Max(a.Y + a.Height, b.Y + b.Height);
 
 			return new Rectangle(x1, y1, x2 - x1, y2 - y1);
 		}
@@ -246,7 +248,7 @@ namespace Visao
 		/// <returns>A <see cref="System.String"/> that describes this instance.</returns>
 		public override string ToString()
 		{
-			return String.Format("{{{0}-{1}}}", Location, Location + Size);
+			return String.Format("{{{0}-{1}}}", Location, Location + new Point(Size.Width, Size.Height));
 		}
 	}
 }
